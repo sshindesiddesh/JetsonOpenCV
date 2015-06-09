@@ -17,8 +17,8 @@ int main(int argc, char* argv[])
 		cout << "Cannot open the video cam" << endl;
         	return -1;
         }
-	namedWindow("MyVideo",CV_WINDOW_AUTOSIZE); //create a window called "MyVideo"
-	namedWindow("MyOutput",CV_WINDOW_AUTOSIZE); //create a window called "MyVideo"
+	//namedWindow("MyVideo",CV_WINDOW_AUTOSIZE); //create a window called "MyVideo"
+	//namedWindow("MyOutput",CV_WINDOW_AUTOSIZE); //create a window called "MyVideo"
 		
 	cv::Mat src_host;
         cv::gpu::GpuMat dst, src, med;
@@ -26,21 +26,29 @@ int main(int argc, char* argv[])
 	
 	while (1)
         {
+		int64 start = cv::getTickCount();
         	bool bSuccess = cap.read(src_host); // read a new frame from video
 		if (!bSuccess) //if not success, break loop
 		{
 			cout << "Cannot read a frame from video stream" << endl;
 			break;
 		}
-		imshow("MyVideo", src_host); //show the frame in "MyVideo" window
+		//imshow("MyVideo", src_host); //show the frame in "MyVideo" window
+        	
         	
 		//The Main Code Comes Here
 		src.upload(src_host);
+		
 		cv::gpu::cvtColor(src, med, CV_BGR2GRAY);
         	cv::gpu::threshold(med, dst, 128.0, 255.0, CV_THRESH_BINARY);
-     		dst.download(result_host);
+     		
+		dst.download(result_host);
 		
-        	imshow("MyOutput", result_host); //show the frame in "MyVideo" window
+        	//imshow("MyOutput", result_host); //show the frame in "MyVideo" window
+
+		double fps = cv::getTickFrequency() / (cv::getTickCount() - start);
+		std::cout << "FPS : " << fps << std::endl;
+
 
         	if (waitKey(30) == 27) //wait for 'esc' key press for 30ms. If 'esc' key is pressed, break loop
 		{

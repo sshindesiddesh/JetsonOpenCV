@@ -25,6 +25,7 @@ int main(int argc, char* argv[])
 	
 	while (1)
         {
+		int64 start = cv::getTickCount();
         	bool bSuccess = cap.read(src_host); // read a new frame from video
 		if (!bSuccess) //if not success, break loop
 		{
@@ -32,7 +33,10 @@ int main(int argc, char* argv[])
 			break;
 		}
 		imshow("MyVideo", src_host); //show the frame in "MyVideo" window
-        	
+	
+        	double fps = cv::getTickFrequency() / (cv::getTickCount() - start);
+		std::cout << "FPS : " << fps << std::endl;
+
 		//The Main Code Comes Here
         	if (waitKey(30) == 27) //wait for 'esc' key press for 30ms. If 'esc' key is pressed, break loop
 		{
