@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
 			cout << "Cannot read a frame from video stream" << endl;
 			break;
 		}
-		//imshow("MyVideo", src_host); //show the frame in "MyVideo" window
+		imshow("MyVideo", src_host); //show the frame in "MyVideo" window
         	
         	
 		//The Main Code Comes Here
@@ -44,7 +44,7 @@ int main(int argc, char* argv[])
      		
 		dst.download(result_host);
 		
-        	//imshow("MyOutput", result_host); //show the frame in "MyVideo" window
+        	imshow("MyOutput", result_host); //show the frame in "MyVideo" window
 
 		double fps = cv::getTickFrequency() / (cv::getTickCount() - start);
 		std::cout << "FPS : " << fps << std::endl;
