@@ -1,0 +1,89 @@
+https://developer.nvidia.com/ 
+( Developer Zone - NVIDIA)
+
+https://developer.nvidia.com/cuda-zone
+ (All about NVIDIA CUDA is available here)
+
+https://developer.nvidia.com/jetson-tk1 
+( Main reference for the jetson-tk1 board )
+
+https://developer.nvidia.com/embedded-computing
+ (Jetson Support page )
+
+http://devblogs.nvidia.com/parallelforall/
+ (NVIDIA - parallelforall main page )
+
+http://devblogs.nvidia.com/parallelforall/jetson-tk1-mobile-embedded-supercomputer-cuda-everywhere/ 
+( ParallelForAll post o jetson-tk1 )
+
+https://developer.nvidia.com/get-started-jetson
+( Getting started with jetson-tk1 )
+
+https://developer.nvidia.com/opencv 
+(NVIDIA - opencv documentation )
+
+http://devblogs.nvidia.com/parallelforall/cudacasts-episode-21-porting-simple-opencv-sample-jetson-tk1-gpu/
+( Most IMP LINK with porting and rinnung opencv application on the board )
+
+http://devblogs.nvidia.com/parallelforall/cudacasts-episode-20-getting-started-jetson-tk1-opencv/ 
+(Episode before the above one )
+
+http://docs.nvidia.com/gameworks/index.html#gameworks_landing_page.htm%3FTocPath%3D_____1 
+( NVIDIA GAMEWORKS full documentation )
+
+http://docs.nvidia.com/gameworks/index.html#technologies/mobile/opencv_intro.htm
+ ( opencv for tegra wholw documentaion )
+
+https://developer.nvidia.com/jetson-tk1-development-pack
+( total development pack and software available here )
+
+http://docs.nvidia.com/gameworks/index.html#technologies/mobile_technologies.htm
+( All mobile technology support available here especially opencv tegra android ) ( This is also an important guide to undrstand opencv tegra parallel processing implementation on various mobile platforms )
+
+https://developer.nvidia.com/gpu-accelerated-libraries
+( All the GPU accelerated libraries on NVIDIA platform )
+
+https://www.youtube.com/watch?v=pB6h_hFpRGo&list=PL5B692fm6--vScfBaxgY89IRWFzDt0Khm
+( CUDAcast whole youtube series)
+
+http://jetsonhacks.com/2014/09/28/jetson-tk1-demo-opencv-gstreamer-bitblt-effects/
+( Jetsonhacks youtube channel and their website could be of very use as they have demos working on jetson tk1 )
+
+http://devblogs.nvidia.com/parallelforall/low-power-sensing-autonomy-nvidia-jetson-tk1/
+( Good website for application and hardware understanding )
+
+https://devtalk.nvidia.com/default/topic/766276/embedded-systems/guide-playstation-eye-on-jetson-tk1/
+( Installing New Kernel release of Your Own)
+
+https://devtalk.nvidia.com/default/topic/766276/embedded-systems/guide-playstation-eye-on-jetson-tk1/
+( Guide To Install PS3 Camera)
+
+http://ubuntuforums.org/showthread.php?t=1905441
+( This Tells us way to compile and Run cuda application-Official Ubuntu Documentation)
+
+https://www.youtube.com/watch?v=syU4hplAcYY&feature=youtube_gdata_player
+( UNboxing video )
+
+https://www.youtube.com/watch?v=TB-bIayjBbc&feature=youtube_gdata_player
+(Install and flask tk1.1 )
+
+https://www.youtube.com/watch?v=TB-bIayjBbc&feature=youtu.be
+(Installation tutorial for jetson tk1 )
+
+http://opencv.org/platforms/cuda.html
+(Platform Discription and useful sample code from opencv official documentation)
+
+http://docs.opencv.org/modules/gpu/doc/gpu.html
+(GPU Accelerated Computer Vision Library Official OpenCV Documentation)
+
+http://docs.opencv.org/modules/gpu/doc/image_processing.html
+(GPU and Image Processing Dedicated Link)
+
+http://docs.opencv.org/modules/gpu/doc/object_detection.html
+(Object Detection)
+
+http://docs.opencv.org/modules/gpu/doc/feature_detection_and_description.html
+(Feature Detection )
+
+http://docs.nvidia.com/gameworks/content/technologies/mobile/opencv_main.htm
+(OpenCV 4 Tegra Official NVDIA Documentation-Android and Java Mobile Phone Platforms)
